@@ -27,6 +27,7 @@ class AccountView(generic.ListView):
 class EventView(generic.DetailView):
     model = Event
     template_name = 'eventFinderApp/event.html'
+    
 
 @login_required(login_url = 'login')
 def addevent(request):
